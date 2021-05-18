@@ -4,40 +4,40 @@
   <title>Content Test</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css">
+  
 </head>
 <body>
-
-<div class="container">
-    <header>
-        <div class="card bg-warning text-white">
-            <div class="card-body" style="text-align: center;"><h2>Paket Berlangganan</h2></div>
-          </div>
-    </header>
+  <header>
+    <div class="bg-warning text-white">
+      <div class="card-body text-center">
+        <i class="fas fa-arrow-left"></i>
+        <h2>Paket Berlangganan</h2>
+        <span></span>
+      </div>
+    </div>
+  </header>
   
   <!-- button images -->
-  <div class="card bg">
-    <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-        <img src="images/Trial-3 - Copy.png" alt="package">
-      </button>
-      <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-        <img src="images/Trial-4 - Copy.png" alt="package">
-      </button>
-      <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-        <img src="images/Trial-2 - Copy.png" alt="package">
-      </button>
-      <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-        <img src="images/Trial-1 - Copy.png" alt="package">
-      </button>
-      <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
-        <img src="images/Trial - Copy.png" alt="package">
-      </button>
-  </div>
-  
-  
+    <button type="button" class="btn" id="btn-img" data-toggle="modal" data-target="#myModal">
+      <img src="images/Trial-3 - Copy.png" alt="package">
+    </button>
+    <button type="button" class="btn" id="btn-img" data-toggle="modal" data-target="#myModal">
+      <img src="images/Trial-4 - Copy.png" alt="package">
+    </button>
+    <button type="button" class="btn" id="btn-img" data-toggle="modal" data-target="#myModal">
+      <img src="images/Trial-2 - Copy.png" alt="package">
+    </button>
+    <button type="button" class="btn" id="btn-img" data-toggle="modal" data-target="#myModal">
+      <img src="images/Trial-1 - Copy.png" alt="package">
+    </button>
+    <button type="button" class="btn" id="btn-img" data-toggle="modal" data-target="#myModal">
+      <img src="images/Trial - Copy.png" alt="package">
+    </button>
+
   <!-- The Modal -->
   <div class="modal fade" id="myModal">
     <div class="modal-dialog">
@@ -45,38 +45,41 @@
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <p class="modal-title" style="text-align: center;"></p>
+          <p class="modal-title"></p>
         </div>
         
         <!-- Modal body -->
-        <p class="modal-title" style="text-align: center; color: rgb(38, 38, 211);">Fitur yang Terbuka:</p>
+        <p class="modal-title text-center">Fitur yang Terbuka:</p>
         <div class="modal-body">
-          <img src="images/ic_pembuka.svg" alt="feature" style="width: 100px;">
-          <img src="images/ic_broadcast.svg" alt="feature" style="width: 100px;">
-          <img src="images/ic_driver.svg" alt="feature" style="width: 100px;">
-          <img src="images/ic_iklan.svg" alt="feature" style="width: 100px;">
-          <img src="images/ic_api.svg" alt="feature" style="width: 100px;">
-          <img src="images/ic_diskon.svg" alt="feature" style="width: 100px;">
+          <img id="img-body" src="images/ic_pembuka.svg" alt="feature">
+          <img id="img-body" src="images/ic_broadcast.svg" alt="feature">
+          <img id="img-body" src="images/ic_white_label.svg" alt="feature">
+          <img id="img-body" src="images/ic_driver.svg" alt="feature">
+          <img id="img-body" src="images/ic_mitra.svg" alt="feature">
+          <img id="img-body" src="images/ic_iklan.svg" alt="feature">
+          <img id="img-body" src="images/ic_api.svg" alt="feature">
+          <img id="img-body" src="images/ic_diskon.svg" alt="feature">
         </div>
         
-        <button type="button" class="btn btn-warning btn-sm">Bulanan Rp 50.000</button>
+        <button type="button" class="btn btn-warning btn-sm" id="btn">Bulanan Rp 50.000</button>
         
-        <div class="card bg">
-            <p style="text-align: center; color: rgb(255, 66, 66);">Lebih Hemat Rp 100.000!</p>
-        </div>
+        <p style="text-align: center; color: rgb(255, 66, 66); margin-top: 20px;">Lebih Hemat Rp 100.000!</p>
         
-        <button type="button" class="btn btn-primary btn-sm">1 Tahun Rp 500.000</button>
+        <button type="button" class="btn btn-primary btn-sm" id="btn">1 Tahun Rp 500.000</button>
         
         <!-- Modal footer -->
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        </div>
-        
+        </div> -->
+
       </div>
     </div>
   </div>
   
-</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
 
 </body>
 </html>
